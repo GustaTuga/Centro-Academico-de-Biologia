@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-image: url("../images/floresta-vista-de-cima.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#logo-cabio {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.academico, #academico {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    color: #ffffff;
+    font-size: medium;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px #000000;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(6, 120, 13, 0.7);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.menu:hover {
+    background-color: rgba(6, 120, 13, 1);
+}
+
+#linha-header {
+    border: 1px solid #ffffff;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+    font-weight: 500;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #06780d;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.universidade {
+    margin-top: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#imagens-eventos {
+    width: 40%;
+    height: 40%;
+}
+
+#text-preview {
+    margin-left: 30px;
+    text-align: justify;
+}
+
+#Saber-Mais {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #b782ee;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+#Saber-Mais:hover {
+    padding: 15px;
+    transform: scale(1.1);
+}
+
+#linha {
+    display: none;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #e1306c;
+    font-size: 30px;
+}
+
+.fa-instagram {
+    background-color: #ffffff;
+    padding: 2px 2px 0px 2px;
+    border-radius: 10px;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+.direitos-reservados {
+    margin-top: 20px; 
+    font-size: 16px; 
+    color: #ffffff; 
+    text-align: center; 
+}
+
+#contate-developer {
+    color: #ffffff;
+}
+
+.fa-github {
+    color: #ffffff;
+    background-color: #333333;
+    padding: 1px;
+    border-radius: 50px;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    background-color: #ffffff;
+    padding: 1px 2px 0px 1px;
+    border-radius: 3px;
+}
+
+.fa-whatsapp {
+    color: green;
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 10px;
+        background-image: url("../images/logo-cabio.png");
+        background-size: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .left, .right {
+        display: block;
+        text-align: center;
+    }
+
+    #imagens-eventos {
+        width: 100%;
+    }
+
+    #text-preview {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .menu-icon {
+        display: block;
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(6, 120, 13);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px #000000;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 1px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .menu a:hover {
+        transform: scale(0.8);
+    }
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    #linha {
+        display: block;
+        width: 100%;
+    }
+
+    #linha-header {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: inline-block;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .academico, .logo-cabio, #logo-cabio {
+        display: none;
+    }
+}
